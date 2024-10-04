@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="shortcut icon" href="./computer.jpeg"  type="imgae/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Cool Hacker search engine</title>
+</head>
+
+<body>
+	<div class="section">
+		<img src="./computer.jpeg">
+		<div class="search-box">
+			<input type="text" placeholder="search Here..." name="" class="query" value="">
+			<img src="">
+			<img src="">
+			
+		</div>
+		<div class="btn">
+			<button class="search-btn">Cool search</button>
+		</div>
+	</div>
+	<!--Javascript codes-->
+	<script>
+		let query = document.querySelector('.query');
+		let searchbtn = document.querySelector('.search-btn');
+
+		searchbtn.onclick = function () {
+			let url = 'https://www.google.com/search?q=' + query.value;
+			window.open(url, '_blank');
+		}
+	</script>
+</body>
+
+</html>
